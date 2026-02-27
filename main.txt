@@ -75,3 +75,14 @@ if __name__ == "__main__":
 nochmalneu
 jskfdjsak
 sgagsa
+from typing import TypeVar, List
+
+T = TypeVar('T')
+
+def erste_element_ausgeben(liste: List[T]) -> T:
+    """Gibt das erste Element einer Liste zurück, egal welchen Typs."""
+    return liste[0]
+
+# Funktioniert mit Zahlen oder Texten:
+print(erste_element_ausgeben([10, 20, 30]))
+print(erste_element_ausgeben(["Nürnberg", "Fürth", "Erlangen"]))
